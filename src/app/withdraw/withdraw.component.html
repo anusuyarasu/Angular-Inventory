@@ -1,0 +1,26 @@
+<main>
+    <div class="container-fluid" style="margin-top: 70px; ">
+
+            <div class>
+                <form class="form-horizontal" >
+                  <div>
+                   <p>Withdraw Ether In Your Account<p>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="amount">Amount:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" name="amount"  [(ngModel)]="amount" placeholder="Enter Amount">
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" (click)="Withdraw()" class="btn btn-default">WithDraw</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+  </main>

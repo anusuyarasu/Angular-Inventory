@@ -1,0 +1,55 @@
+
+<main>
+    <div class="container-fluid" style="margin-top: 70px; ">
+
+        <div class="row col text-center">
+
+
+            <div class="col-sm-12" >
+                <div>
+                    <h5>Stock Details</h5>
+                    <br>
+                </div>
+
+
+
+
+<!--Table-->
+<table class="table  ">
+
+    <!--Table head-->
+    <thead class="mdb-color darken-3">
+        <tr class="text-white">
+
+
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Brand</th>
+            <th>Product Quantity</th>
+            <th>Product Price</th>
+            <th>Date</th>
+
+        </tr>
+    </thead>
+    <!--Table head-->
+
+    <!--Table body-->
+    <tbody>
+        <tr *ngFor="let product of details;">
+            <td >{{product.pid}}</td>
+            <td >{{product.pname}} </td>
+            <td>{{product.brand}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.date}}</td>
+        </tr>
+    </tbody>
+    <!--Table body-->
+</table>
+<!--Table-->
+
+            </div>
+          </div>
+        </div>
+
+  </main>

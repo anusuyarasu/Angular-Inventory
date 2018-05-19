@@ -1,0 +1,56 @@
+
+<main>
+    <div class="container-fluid" style="margin-top: 70px; ">
+
+        <div class="row col text-center">
+
+
+            <div class="col-sm-12" >
+                <div>
+                    <h5>View Customer  Order Details</h5>
+                    <br>
+                </div>
+
+
+
+
+<!--Table-->
+<table class="table  ">
+
+    <!--Table head-->
+    <thead class="mdb-color darken-3">
+        <tr class="text-white">
+            <th>Order Id</th>
+            <th>Product Id</th>
+            <th>Customer Id</th>
+            <th>ProductName</th>
+            <th> Quantity</th>
+            <th>Price</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <!--Table head-->
+
+    <!--Table body-->
+    <tbody>
+        <tr *ngFor="let order of details;">
+            <td >{{order.oid}}</td>
+            <td >{{order.cusid}}</td>
+            <td >{{order.pid}} </td>
+            <td >{{order.pname}} </td>
+            <td>{{order.quantity}}</td>
+            <td>{{order.price}}</td>
+            <td>{{order.date}}</td>
+            <td>{{order.status}}</td>
+        </tr>   
+    </tbody>
+    <!--Table body-->
+</table>
+<!--Table-->
+
+            </div>
+          </div>
+        </div>
+
+  </main>

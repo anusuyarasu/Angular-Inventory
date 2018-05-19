@@ -1,0 +1,80 @@
+
+<main>
+    <div class="container-fluid" style="margin-top: 70px; ">
+
+        <div class="row">
+            <div class="col-sm-4" >
+                <form class="form-horizontal" >
+                  <div>
+                   <h5>Update Product Form</h5>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="productid">ProductID:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" name="productid" [(ngModel)]="productid" placeholder="Enter Product Id">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" name="quantity" [(ngModel)]="quantity" placeholder="Enter Quantity">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-2" for="price">Price:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" name="price" [(ngModel)]="price" placeholder="Enter  Price">
+                      </div>
+                    </div>
+
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" (click)="Product();" class="btn btn-default">Update</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm-6" >
+                <div>
+                    <h5>Out Of Stock Product Details</h5>
+                </div>
+
+
+
+
+<!--Table-->
+<table class="table">
+
+    <!--Table head-->
+    <thead class="mdb-color darken-3">
+        <tr class="text-white">
+           
+            <th>Product Id</th>
+            <th>ProductName</th>
+            <th>Brand </th>
+            <th> Quantity</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <!--Table head-->
+
+    <!--Table body-->
+    <tbody>
+        <tr *ngFor="let update of details;">
+            <td >{{update.pid}}</td>
+            <td >{{update.pname}}</td>
+            <td >{{update.brand}}</td>
+            <td>{{update.quantity}}</td>
+            <td>{{update.price}}</td>
+        </tr>
+    </tbody>
+    <!--Table body-->
+</table>
+<!--Table-->
+
+            </div>
+          </div>
+        </div>
+
+  </main>

@@ -1,0 +1,45 @@
+
+<main>
+    <div class="container-fluid" style="margin-top: 70px; ">
+
+            <div class>
+                <form class="form-horizontal" >
+                  <div>
+                   <h3>Add Product Form</h3>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="productname">Name:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" name="productname" [(ngModel)]="productname" placeholder="Enter Product Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="brand">Brand:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" name="brand" required [(ngModel)]="brand" placeholder="Enter Brand Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" name="quantity" required [(ngModel)]="quantity" placeholder="Enter Quantity">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-2" for="amount">Amount:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" name="amount" required [(ngModel)]="amount" placeholder="Enter  Amount">
+                      </div>
+                    </div>
+
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" (click)="submit()" class="btn btn-default">ADD</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+  </main>
